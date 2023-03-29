@@ -1,7 +1,8 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
+
 const Greetings = () => {
-  const randomGreeting = useSelector((state) => state.greeting)
+  const randomGreeting = useSelector((state) => state.greeting);
   return (
     <>
       { randomGreeting.isLoading ? <h2>Loading... Please wait</h2> : null}
