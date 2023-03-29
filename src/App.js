@@ -1,5 +1,5 @@
 import React from "react";
-import Greetings from "./Greetings";
+import Greetings from "./components/Greetings";
 import { useDispatch } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { getGreeting } from "../redux/greeting/greetingSlice";
