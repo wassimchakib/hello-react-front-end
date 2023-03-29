@@ -7,7 +7,7 @@ const Greetings = () => {
     <>
       { randomGreeting.isLoading ? <h2>Loading... Please wait</h2> : null}
       { randomGreeting.error.length > 0 ? <h2>{randomGreeting.error.stack}</h2> : null}
-      { randomGreeting.successful ? <h2>{randomGreeting.name.name}</h2> : null}
+      { randomGreeting.successful ? <h2>{randomGreeting.name.text}</h2> : null}
     </>
   );
 };
